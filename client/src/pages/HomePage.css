@@ -1,0 +1,121 @@
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #333;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: red;
+  margin: 10px 0 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item span {
+  font-weight: bold;
+}
+
+.service-item:hover {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item.chatbot {
+  background-color: #ed8b8b;
+}
+
+.service-item.translator {
+  background-color: #7fd3d0;
+}
+
+.service-item.faq {
+  background-color: #e8a578;
+}
+
+.service-item.about {
+  background-color: #7eadcb;
+}
+
+.fruit-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.fruit-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fruit-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+      font-size: 2rem;
+  }
+
+  .header p {
+      font-size: 1.2rem;
+  }
+
+  .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .service-item {
+      font-size: 1rem;
+      padding: 15px;
+  }
+
+  .fruit-image {
+      width: 120px;
+  }
+}

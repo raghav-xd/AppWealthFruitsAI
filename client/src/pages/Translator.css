@@ -1,0 +1,119 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.translator-wrapper {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.translator-text-input {
+    display: flex;
+    gap: 20px;
+}
+
+.translator-from-text,
+.translator-to-text {
+    flex: 1;
+    height: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.translator-from-text {
+    border-color:  #ff6b6b;
+}
+
+.translator-to-text {
+    background-color: #f7f7f7;
+    border-color:  #ff6b6b;
+    cursor: not-allowed;
+}
+
+.translator-controls {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.translator-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.translator-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.translator-icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.translator-icons i:hover {
+    color:  #ff6b6b;
+}
+
+.translator-exchange {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color:  #ff6b6b;
+    transition: color 0.3s ease;
+}
+
+.translator-exchange:hover {
+    color:  #ff6b6b;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.translator-btn {
+    width: 30%;
+    padding: 12px;
+    margin-left:30%;
+    align-self: center;
+    border: none;
+    border-radius: 8px;
+    background-color:  #ff6b6b;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.translator-btn:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+.translator-btn:hover:not(:disabled) {
+    background-color:  #ff6b6b;
+}
